@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wood Mart Furniture | Luxury Furniture</title>
+
+    <meta name="description"
+        content="Wood Mart Furniture - Luxury sofas, bedroom sets, jhoolay, dining tables, dressing tables, LCD racks and chairs. Contact us for prices and orders.">
+
+    <meta name="keywords"
+        content="Wood Mart Furniture, furniture, luxury sofas, bedroom sets, jhoolay, dining tables, dressing tables, LCD racks, chairs">
+
+    <meta name="robots" content="index, follow">
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+
+        /* ================= HEADER ================= */
+
+        header {
+            background: #111;
+            color: white;
+
+            padding: 18px 6%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            position: sticky;
+            top: 0;
+
+            z-index: 1000;
+
+            box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+        }
+
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+
+        .logo span {
+            color: #d4a24c;
+        }
+
+
+        nav a {
+            color: white;
+            text-decoration: none;
+
+            margin-left: 20px;
+
+            font-size: 15px;
+
+            transition: 0.3s;
+        }
+
+
+        nav a:hover {
+            color: #d4a24c;
+        }
+
+
+        /* ================= HERO ================= */
+
+        .hero {
+
+            min-height: 580px;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.55),
+                    rgba(0,0,0,0.65)
+                ),
+                url("sofa1.jpeg")
+                center/cover no-repeat;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            color: white;
+
+            padding: 40px 20px;
+        }
+
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+
+        .hero h1 {
+            font-size: 58px;
+
+            margin-bottom: 20px;
+
+            letter-spacing: 2px;
+        }
+
+
+        .hero h1 span {
+            color: #d4a24c;
+        }
+
+
+        .hero p {
+            font-size: 21px;
+
+            line-height: 1.7;
+
+            margin-bottom: 30px;
+        }
+
+
+        .hero-btn {
+
+            display: inline-block;
+
+            background: #d4a24c;
+
+            color: #111;
+
+            padding: 15px 32px;
+
+            border-radius: 30px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+
+        .hero-btn:hover {
+
+            background: white;
+
+            transform: translateY(-3px);
+        }
+
+
+
+        /* ================= SEARCH ================= */
+
+        .search-area {
+
+            background: white;
+
+            padding: 35px 6%;
+        }
+
+
+        .search-box {
+
+            max-width: 700px;
+
+            margin: auto;
+        }
+
+
+        .search-box input {
+
+            width: 100%;
+
+            padding: 17px 22px;
+
+            border: 1px solid #ddd;
+
+            border-radius: 35px;
+
+            outline: none;
+
+            font-size: 16px;
+
+            box-shadow:
+                0 4px 15px
+                rgba(0,0,0,0.08);
+        }
+
+
+        .search-box input:focus {
+
+            border-color: #d4a24c;
+        }
+
+
+
+        /* ================= CATEGORY NAV ================= */
+
+        .category-nav {
+
+            background: #111;
+
+            padding: 15px 5%;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+        }
+
+
+        .category-nav a {
+
+            color: white;
+
+            text-decoration: none;
+
+            padding: 10px 17px;
+
+            border-radius: 25px;
+
+            font-size: 13px;
+
+            transition: 0.3s;
+        }
+
+
+        .category-nav a:hover {
+
+            background: #d4a24c;
+
+            color: #111;
+        }
+
+
+
+        /* ================= CATEGORY SECTION ================= */
+
+        .category-section {
+
+            padding: 75px 6%;
+
+            background: #f5f5f5;
+        }
+
+
+        .category-section:nth-of-type(even) {
+
+            background: white;
+        }
+
+
+
+        /* ================= CATEGORY HEADING ================= */
+
+        .category-heading {
+
+            text-align: center;
+
+            margin-bottom: 45px;
+        }
+
+
+        .category-heading .icon {
+
+            font-size: 42px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .category-heading h2 {
+
+            font-size: 40px;
+
+            margin-bottom: 12px;
+        }
+
+
+        .category-heading h2 span {
+
+            color: #b17b18;
+        }
+
+
+        .category-heading p {
+
+            max-width: 720px;
+
+            margin: auto;
+
+            color: #777;
+
+            font-size: 16px;
+
+            line-height: 1.7;
+        }
+
+
+
+        /* ================= PRODUCTS ================= */
+
+        .products {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 25px;
+
+            max-width: 1400px;
+
+            margin: auto;
+        }
+
+
+
+        /* ================= PRODUCT CARD ================= */
+
+        .product-card {
+
+            background: white;
+
+            border-radius: 15px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 5px 20px
+                rgba(0,0,0,0.08);
+
+            transition: 0.35s;
+        }
+
+
+        .product-card:hover {
+
+            transform: translateY(-7px);
+
+            box-shadow:
+                0 12px 30px
+                rgba(0,0,0,0.16);
+        }
+
+
+        .product-image {
+
+            width: 100%;
+
+            height: 280px;
+
+            object-fit: cover;
+
+            display: block;
+
+            background: #eee;
+        }
+
+
+        .product-info {
+
+            padding: 18px;
+
+            text-align: center;
+        }
+
+
+        .product-info h3 {
+
+            font-size: 19px;
+
+            margin-bottom: 8px;
+        }
+
+
+        .product-number {
+
+            color: #888;
+
+            font-size: 13px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .price {
+
+            color: #b17b18;
+
+            font-weight: bold;
+
+            font-size: 17px;
+
+            margin-bottom: 15px;
+        }
+
+
+
+        /* ================= WHATSAPP ================= */
+
+        .whatsapp-btn {
+
+            display: inline-block;
+
+            background: #25D366;
+
+            color: white;
+
+            text-decoration: none;
+
+            padding: 10px 17px;
+
+            border-radius: 25px;
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+
+        .whatsapp-btn:hover {
+
+            background: #1da851;
+        }
+
+
+
+        /* ================= ABOUT ================= */
+
+        .about {
+
+            background: #111;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 80px 6%;
+        }
+
+
+        .about-content {
+
+            max-width: 900px;
+
+            margin: auto;
+        }
+
+
+        .about h2 {
+
+            font-size: 40px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .about p {
+
+            color: #ddd;
+
+            line-height: 1.9;
+
+            font-size: 17px;
+        }
+
+
+
+        /* ================= CONTACT ================= */
+
+        .contact {
+
+            text-align: center;
+
+            background: #eee;
+
+            padding: 75px 6%;
+        }
+
+
+        .contact h2 {
+
+            font-size: 40px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .contact p {
+
+            color: #666;
+
+            margin-bottom: 30px;
+        }
+
+
+        .contact-buttons {
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 15px;
+        }
+
+
+        .contact-btn {
+
+            text-decoration: none;
+
+            padding: 14px 25px;
+
+            border-radius: 30px;
+
+            font-weight: bold;
+
+            color: white;
+
+            background: #111;
+
+            transition: 0.3s;
+        }
+
+
+        .contact-btn:hover {
+
+            background: #d4a24c;
+
+            color: #111;
+        }
+
+
+        .contact-btn.whatsapp {
+
+            background: #25D366;
+        }
+
+
+        .contact-btn.whatsapp:hover {
+
+            background: #1da851;
+
+            color: white;
+        }
+
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+
+            background: #080808;
+
+            color: #aaa;
+
+            text-align: center;
+
+            padding: 25px 15px;
+
+            font-size: 14px;
+        }
+
+
+        footer strong {
+
+            color: #d4a24c;
+        }
+
+
+
+        /* ================= NO RESULTS ================= */
+
+        .no-results {
+
+            text-align: center;
+
+            padding: 50px;
+
+            font-size: 20px;
+
+            color: #777;
+
+            grid-column: 1 / -1;
+        }
+
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 1100px) {
+
+            .products {
+
+                grid-template-columns:
+                    repeat(3, 1fr);
+            }
+
+
+            .hero h1 {
+
+                font-size: 48px;
+            }
+        }
+
+
+
+        @media (max-width: 800px) {
+
+            header {
+
+                flex-direction: column;
+
+                gap: 12px;
+            }
+
+
+            nav {
+
+                text-align: center;
+            }
+
+
+            nav a {
+
+                margin: 0 7px;
+
+                font-size: 13px;
+            }
+
+
+            .hero {
+
+                min-height: 500px;
+            }
+
+
+            .hero h1 {
+
+                font-size: 40px;
+            }
+
+
+            .hero p {
+
+                font-size: 17px;
+            }
+
+
+            .products {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+
+            .product-image {
+
+                height: 240px;
+            }
+
+
+            .category-heading h2 {
+
+                font-size: 34px;
+            }
+        }
+
+
+
+        @media (max-width: 500px) {
+
+            .logo {
+
+                font-size: 23px;
+            }
+
+
+            nav a {
+
+                margin: 0 4px;
+
+                font-size: 12px;
+            }
+
+
+            .hero {
+
+                min-height: 450px;
+            }
+
+
+            .hero h1 {
+
+                font-size: 32px;
+            }
+
+
+            .hero p {
+
+                font-size: 15px;
+            }
+
+
+            .category-section {
+
+                padding: 55px 4%;
+            }
+
+
+            .category-heading h2 {
+
+                font-size: 30px;
+            }
+
+
+            .category-heading p {
+
+                font-size: 14px;
+            }
+
+
+            .products {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .product-image {
+
+                height: 290px;
+            }
+
+
+            .category-nav {
+
+                padding: 12px 3%;
+            }
+
+
+            .category-nav a {
+
+                font-size: 11px;
+
+                padding: 8px 11px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+    <div class="logo">
+
+        WOOD <span>MART</span>
+
+    </div>
+
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#sofas">Sofas</a>
+
+        <a href="#bedrooms">Bedroom</a>
+
+        <a href="#jhoolay">Jhoolay</a>
+
+        <a href="#dining">Dining</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section
+    class="hero"
+    id="home"
+>
+
+    <div class="hero-content">
+
+        <h1>
+
+            Welcome to
+
+            <span>
+                Wood Mart
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            Premium & Luxury Furniture
+            For Your Beautiful Home
+
+        </p>
+
+
+        <a
+            href="#sofas"
+            class="hero-btn"
+        >
+
+            Explore Collection
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SEARCH
+===================================================== -->
+
+<section class="search-area">
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search furniture..."
+            onkeyup="searchProducts()"
+        >
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CATEGORY NAVIGATION
+===================================================== -->
+
+<div class="category-nav">
+
+    <a href="#sofas">
+        🛋️ Sofas
+    </a>
+
+    <a href="#bedrooms">
+        🛏️ Bedroom Sets
+    </a>
+
+    <a href="#jhoolay">
+        🌿 Jhoolay
+    </a>
+
+    <a href="#dining">
+        🍽️ Dining Tables
+    </a>
+
+    <a href="#dressing">
+        🪞 Dressing Tables
+    </a>
+
+    <a href="#lcd">
+        📺 LCD Racks
+    </a>
+
+    <a href="#chairs">
+        🪑 Chairs
+    </a>
+
+</div>
+
+
+
+<!-- =====================================================
+     SOFAS
+===================================================== -->
+
+<section
+    class="category-section"
+    id="sofas"
+>
+
+    <div class="category-heading">
+
+        <div class="icon">
+            🛋️
+        </div>
+
+
+        <h2>
+
+            Luxury
+            <span>Sofas</span>
+
+        </h2>
+
+
+        <p>
+
+            Discover our premium collection
+            of stylish and comfortable luxury
+            sofas designed to give your living
+            room a beautiful and elegant look.
+
+        </p>
+
+    </div>
+
+
+    <div
+        class="products"
+        id="sofaProducts"
+    ></div>
+
+</section>
+
+
+
+<!-- =====================================================
+     BEDROOM SETS
+===================================================== -->
+
+<section
+    class="category-section"
+    id="bedrooms"
+>
+
+    <div class="category-heading">
+
+        <div class="icon">
+            🛏️
+        </div>
+
+
+        <h2>
+
+            Bedroom
+            <span>Sets</span>
+
+        </h2>
+
+
+        <p>
+
+            Elegant bedroom furniture with
+            beautiful designs and premium
+            finishing for a comfortable
+            and luxurious bedroom.
+
+        </p>
+
+    </div>
+
+
+    <div
+        class="products"
+        id="bedProducts"
+    ></div>
+
+</section>
+
+
+
+<!-- =====================================================
+     JHOOLAY
+===================================================== -->
+
+<section
+    class="category-section"
+    id="jhoolay"
+>
+
+    <div class="category-heading">
+
+        <div class="icon">
+            🌿
+        </div>
+
+
+        <h2>
+
+            Beautiful
+            <span>Jhoolay</span>
+
+        </h2>
+
+
+        <p>
+
+            Traditional and modern jhoolay
+            with beautiful designs that add
+            elegance and comfort to your home.
+
+        </p>
+
+    </div>
+
+
+    <div
+        class="products"
+        id="jholaProducts"
+    ></div>
+
+</section>
+
+
+
+<!-- =====================================================
+     DINING TABLES
+===================================================== -->
+
+<section
+    class="category-section"
+    id="dining"
+>
+
+    <div class="category-heading">
+
+        <div class="icon">
+            🍽️
+        </div>
+
+
+        <h2>
+
+            Dining
+            <span>Tables</span>
+
+        </h2>
+
+
+        <p>
+
+            Stylish dining tables designed
+            for beautiful family gatherings
+            and memorable meals.
+
+        </p>
+
+    </div>
+
+
+    <div
+        class="products"
+        id="diningProducts"
+    ></div>
+
+</section>
+
+
+
+<!-- =====================================================
+     DRESSING TABLES
+===================================================== -->
+
+<section
+    class="category-section"
+    id="dressing"
+>
+
+    <div class="category-heading">
+
+        <div class="icon">
+            🪞
+        </div>
+
+
+        <h2>
+
+            Dressing
+            <span>Tables</span>
+
+        </h2>
+
+
+        <p>
+
+            Elegant dressing tables with
+            beautiful designs and practical
+            storage for modern bedrooms.
+
+        </p>
+
+    </div>
+
+
+    <div
+        class="products"
+        id="dressingProducts"
+    ></div>
+
+</section>
+
+
+
+<!-- =====================================================
+     LCD RACKS
+===================================================== -->
+
+<section
+    class="category-section"
+    id="lcd"
+>
+
+    <div class="category-heading">
+
+        <div class="icon">
+            📺
+        </div>
+
+
+        <h2>
+
+            LCD
+            <span>Racks</span>
+
+        </h2>
+
+
+        <p>
+
+            Modern LCD racks with stylish
+            designs to make your TV lounge
+            look more attractive and organized.
+
+        </p>
+
+    </div>
+
+
+    <div
+        class="products"
+        id="lcdProducts"
+    ></div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CHAIRS
+===================================================== -->
+
+<section
+    class="category-section"
+    id="chairs"
+>
+
+    <div class="category-heading">
+
+        <div class="icon">
+            🪑
+        </div>
+
+
+        <h2>
+
+            Premium
+            <span>Chairs</span>
+
+        </h2>
+
+
+        <p>
+
+            Comfortable and stylish chairs
+            suitable for dining rooms,
+            living rooms and other spaces.
+
+        </p>
+
+    </div>
+
+
+    <div
+        class="products"
+        id="chairProducts"
+    ></div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+    class="about"
+    id="about"
+>
+
+    <div class="about-content">
+
+        <h2>
+            About Wood Mart Furniture
+        </h2>
+
+
+        <p>
+
+            Wood Mart Furniture offers premium
+            and stylish furniture for modern homes.
+            Our collection includes luxury sofas,
+            bedroom sets, beautiful jhoolay,
+            dining tables, dressing tables,
+            LCD racks and comfortable chairs.
+
+        </p>
+
+
+        <br>
+
+
+        <p>
+
+            Quality designs, beautiful finishing
+            and customer satisfaction are our priority.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section
+    class="contact"
+    id="contact"
+>
+
+    <h2>
+        Contact Us
+    </h2>
+
+
+    <p>
+
+        Contact us for prices, orders
+        and more information.
+
+    </p>
+
+
+    <div class="contact-buttons">
+
+
+        <a
+            class="contact-btn"
+            href="tel:03422818770"
+        >
+
+            📞 03422818770
+
+        </a>
+
+
+        <a
+            class="contact-btn"
+            href="tel:03422085552"
+        >
+
+            📞 03422085552
+
+        </a>
+
+
+        <a
+            class="contact-btn whatsapp"
+            href="https://wa.me/923422818770?text=Assalamualaikum%20Wood%20Mart%20Furniture%20se%20furniture%20ke%20bare%20mein%20maloomat%20chahiye."
+            target="_blank"
+        >
+
+            💬 WhatsApp Us
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    © 2026
+
+    <strong>
+        Wood Mart Furniture
+    </strong>
+
+    . All Rights Reserved.
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+/* =====================================================
+   CATEGORY DATA
+===================================================== */
+
+const categories = [
+
+    {
+        type: "sofa",
+        name: "Luxury Sofa",
+        prefix: "sofa",
+        count: 37,
+        container: "sofaProducts"
+    },
+
+
+    {
+        type: "bed",
+        name: "Bedroom Set",
+        prefix: "bed",
+        count: 5,
+        container: "bedProducts"
+    },
+
+
+    {
+        type: "jhola",
+        name: "Jhoola",
+        prefix: "jhola",
+        count: 15,
+        container: "jholaProducts"
+    },
+
+
+    {
+        type: "diningtable",
+        name: "Dining Table",
+        prefix: "diningtable",
+        count: 15,
+        container: "diningProducts"
+    },
+
+
+    {
+        type: "dressingtable",
+        name: "Dressing Table",
+        prefix: "dressingtable",
+        count: 5,
+        container: "dressingProducts"
+    },
+
+
+    {
+        type: "LCDrack",
+        name: "LCD Rack",
+        prefix: "LCDrack",
+        count: 5,
+        container: "lcdProducts"
+    },
+
+
+    {
+        type: "chairs",
+        name: "Chair",
+        prefix: "chairs",
+        count: 19,
+        container: "chairProducts"
+    }
+
+];
+
+
+
+/* =====================================================
+   ALL PRODUCTS
+===================================================== */
+
+let allProducts = [];
+
+
+
+/* =====================================================
+   CREATE PRODUCTS
+===================================================== */
+
+categories.forEach(category => {
+
+    for (
+        let i = 1;
+        i <= category.count;
+        i++
+    ) {
+
+        allProducts.push({
+
+            type: category.type,
+
+            name:
+                category.name
+                + " "
+                + i,
+
+            number: i,
+
+            image:
+                category.prefix
+                + i
+                + ".jpeg",
+
+            container:
+                category.container
+
+        });
+
+    }
+
+});
+
+
+
+/* =====================================================
+   CREATE PRODUCT CARD
+===================================================== */
+
+function createProductCard(product) {
+
+    return `
+
+        <div
+            class="product-card"
+            data-type="${product.type}"
+        >
+
+
+            <img
+
+                src="${product.image}"
+
+                alt="${product.name} - Wood Mart Furniture"
+
+                class="product-image"
+
+                loading="lazy"
+
+            >
+
+
+            <div class="product-info">
+
+
+                <h3>
+
+                    ${product.name}
+
+                </h3>
+
+
+                <div class="product-number">
+
+                    Premium Furniture
+
+                </div>
+
+
+                <div class="price">
+
+                    Contact for Price
+
+                </div>
+
+
+                <a
+
+                    href="https://wa.me/923422818770?text=Assalamualaikum%20mujhe%20${encodeURIComponent(product.name)}%20ke%20bare%20mein%20maloomat%20chahiye."
+
+                    target="_blank"
+
+                    class="whatsapp-btn"
+
+                >
+
+                    💬 Ask on WhatsApp
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+    `;
+
+}
+
+
+
+/* =====================================================
+   DISPLAY CATEGORY
+===================================================== */
+
+function displayCategory(category) {
+
+    const container =
+        document.getElementById(
+            category.container
+        );
+
+
+    const products =
+        allProducts.filter(
+            product =>
+                product.type === category.type
+        );
+
+
+    container.innerHTML =
+        products
+        .map(createProductCard)
+        .join("");
+
+}
+
+
+
+/* =====================================================
+   DISPLAY ALL CATEGORIES
+===================================================== */
+
+categories.forEach(category => {
+
+    displayCategory(category);
+
+});
+
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+function searchProducts() {
+
+    const search =
+        document
+        .getElementById("searchInput")
+        .value
+        .toLowerCase()
+        .trim();
+
+
+    categories.forEach(category => {
+
+        const container =
+            document.getElementById(
+                category.container
+            );
+
+
+        const products =
+            allProducts.filter(product =>
+
+                product.type === category.type
+
+                &&
+
+                (
+
+                    product.name
+                    .toLowerCase()
+                    .includes(search)
+
+                    ||
+
+                    product.type
+                    .toLowerCase()
+                    .includes(search)
+
+                )
+
+            );
+
+
+        if (products.length > 0) {
+
+            container.innerHTML =
+                products
+                .map(createProductCard)
+                .join("");
+
+        }
+
+        else {
+
+            container.innerHTML = `
+
+                <div class="no-results">
+
+                    No furniture found
+                    in this category.
+
+                </div>
+
+            `;
+
+        }
+
+    });
+
+}
+
+</script>
+
+
+</body>
+
+</html>
